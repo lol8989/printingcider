@@ -1,14 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
-const Main = () => {
+const BookMainSection = () => {
   return (
-    <main>
-      <div className="main_container">
-        <div className="bear">
-          <Image src="/img/bear.png" width={571} height={531} alt="bear" />
-        </div>
-      </div>
+    <>
       <div className="book__main">
         <div className="text__container">
           <div className="book_text_container">
@@ -41,72 +36,12 @@ const Main = () => {
         </div>
       </div>
       <style jsx>{`
-        .main_container {
-          /* position: relative; */
-          display: flex;
-          height: 1000px;
-          background-image: url("/img/background.png");
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center bottom;
-          overflow: hidden;
-          padding: 100px 0 0 0;
-          flex-direction: column;
-          justify-content: flex-end;
-          align-content: flex-end;
-          align-items: flex-end;
-        }
-        @media (max-width: 1199px) {
-          .main_container {
-            height: 800px;
-            /* align-items: flex-end; */
-          }
-          .bear {
-            /* align-items: center; */
-          }
-        }
-        @media (max-width: 767px) {
-          .main_container {
-            height: 500px;
-          }
-        }
-        /* @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-              animation: App-logo-spin infinite 20s linear;
-            }
-          } */
-        @media (prefers-reduced-motion: no-preference) {
-          .bear {
-            animation: logo-bounce infinite 2s;
-          }
-        }
-
-        .bear {
-          width: 30%;
-          position: relative;
-          margin: 0 50px 20px 0px;
-          animation-name: ;
-        }
-        @keyframes logo-bounce {
-          0% {
-            transform: translateY(0);
-          }
-          50% {
-            transform: translateY(10px);
-          }
-          100% {
-            transform: translateY(0);
-          }
-        }
-
         .book__main {
           display: flex;
-          /* background-image: url("/img/books.png"); */
-          /* background-size: 800px; */
-          /* background-repeat: no-repeat; */
           background-color: #fafafa;
           height: 840px;
           justify-content: center;
+          margin-bottom: 15px;
         }
         .text__container {
           display: flex;
@@ -129,7 +64,7 @@ const Main = () => {
           display: flex;
           margin-top: 31px;
           text-align: center;
-          font-size: 21px;
+          font-size: 20px;
           max-width: 462px;
         }
         .gotoorderbooks {
@@ -139,16 +74,16 @@ const Main = () => {
           margin: 50px 8px;
         }
         .click__text {
+          color: black;
           text-decoration: none;
           margin: 0 8px;
         }
         .book__background__image {
-          /* z-index: -1; */
-          /* background-image: url("../../public/img/book.png"); */
+          padding-right: 50px;
         }
       `}</style>
-    </main>
+    </>
   );
 };
 
-export default Main;
+export default BookMainSection;

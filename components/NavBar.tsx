@@ -59,14 +59,14 @@ const NavBar = () => {
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: beige;
-          /* padding: 8px 330px; */
+          background-color: white;
           height: 100px;
           width: 100%;
           position: fixed;
           z-index: 1;
         }
         a {
+          color: black;
           text-decoration-line: none;
         }
         .img {

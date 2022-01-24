@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <NavBar />
       <Component {...pageProps} />
-      <span>횅</span>
       <Footer />
     </>
   );
